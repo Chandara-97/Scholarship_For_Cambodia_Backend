@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-light fixed-top">
 		<div class="container">
             <a class="navbar-brand" href="#"><img src="image/logo.png" style="width: 20%;" alt=""></a> 
-            <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler bg-primary" data-target="#navbarSupportedContent" data-toggle="collapse" type="button"><span class="navbar-toggler-icon bg-white "></span></button>
+            <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler custom-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button"><span class="navbar-toggler-icon "></span></button>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item active">
@@ -28,4 +28,10 @@
 				</ul>
 			</div>
 		</div>
-    </nav>
+	</nav>
+	
+	<script type="text/javascript">
+    $(document).on('click','li a',function(){
+            $(this).addClass('nav-link').siblings().removeClass('nav-link')
+    })
+</script>

@@ -24,7 +24,7 @@
     @include('layout.style_css')
     
 <style>
-@yield('style')
+@yield('style_css')
 </style>
 
 <body>
@@ -34,7 +34,7 @@
     <div>
         @yield('post');
     </div>
-    
+
     @include('layout.footer')
 </body>
 </html>

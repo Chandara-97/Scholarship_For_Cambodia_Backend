@@ -48,8 +48,8 @@ body{
 .nav-link {
 	padding: .2rem 1rem;
 }
-.nav-link.active, .nav-link:focus {
-	color: #fff;
+.nav-link.active, .nav-link:focus .btn {
+	background-color: rgb(113, 223, 227);
 }
 .navbar-toggler {
 	padding: 1px 5px;
@@ -59,6 +59,14 @@ body{
 .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
 	color: #fff;
 }
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(8, 0, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: rgb(8, 0, 255);
+} 
 /*********************************************************************************************footer End***********************************************************************************88***************/
 .new_footer_area {
     background: #fbfbfd;
